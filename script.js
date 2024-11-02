@@ -277,12 +277,61 @@ d. меняет порядок цифр числа n на обратный.*/
 
 /*11. Напишите программу, которая проверяет правильность ввода пароля от пользователя. Важно, чтобы пароль соотв. сл. требованиям: длина пароля от 6 символов; пароль должен состоять только из лат. символов; содержать минимум 1 число, 1 большой символ и любой знак из списка: _*&-#$.*/
 
-/*12. Посчитать, сколько раз встречается определенная цифра в введенной последовательности чисел. Количество вводимых чисел и цифра, которую необходимо посчитать вводится пользователем.
-7646546546564
-5 ?*/
+// let pass = prompt('Введите пароль', 's052_Y');
+// let strTrueChars = '_*&-#$.*/0123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM';
+// let strTrueUpChars = 'QWERTYUIOPASDFGHJKLZXCVBNM';
 
+// let passCheck = '';
+// for(let i = 0; i < pass.length; i++) {
+//     let char = pass[i];
+//     for(let j = 0; j < strTrueChars.length; j++) {
+//         if(char == strTrueChars[j]) {
+//             passCheck += char;   
+//         }
+//     }
+// }
+// let checkUpChar = false;
+// for(let i = 0; i < pass.length; i++) {
+//     let char = pass[i];
+//     for(let j = 0; j < strTrueUpChars.length; j++) {
+//         if(char == strTrueUpChars[j]) {
+//             checkUpChar = true;
+//             break; 
+//         }
+//     }
+// }
+// if(pass.length >= 6 && passCheck == pass && checkUpChar == true) {
+//     console.log('Пароль верный');
+// } else {
+//     console.log('Пароль неверный');
+// }
+/*12. Посчитать, сколько раз встречается определенная цифра в введенной последовательности чисел. Количество вводимых чисел и цифра, которую необходимо посчитать вводится пользователем.
+7646546546564*/
 
 /*13. Найти число с максимальной суммой цифр среди чисел: 56,987,103,9011,45.*/
+
+// let strNums = '56,987,103,9011,45';
+// let max = -Infinity;
+// let num = '';
+// let maxNum;
+
+// for(let i = 0; i <= strNums.length; i++) {
+//     if (strNums[i] != undefined && strNums[i] != ',') {
+//         num += strNums[i];
+//     } else {
+//         let sum = 0;
+//         for (let j = 0; j < num.length; j++) {
+//             sum += +num[j];
+//         }
+//         if(sum > max) {
+//             max = sum;
+//             maxNum = num;
+//         }
+//         console.log(num, ` = ${sum}`);
+//         num = '';
+//     }
+// }
+// console.log(`Max num ${maxNum} = ${max}`);
 
 /*14. Вывести на экран «прямоугольник», образованный из двух видов символов. Контур прямоугольника должен состоять из одного символа, а в «заливка» — из другого.
 ##############################
